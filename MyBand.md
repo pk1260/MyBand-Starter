@@ -1,4 +1,4 @@
-# MyBand Starter Project
+# MyBand / SpaceX Project
 
 Dit is een voorbeeld project structuur om te gebruiken voor het My Band project.
 Deze structuur kun je gebruiken voor het bouwen van een website met het MVC principe (dit krijg je in de BAP lessen)
