@@ -13,8 +13,8 @@ Deze planning is een levend document (blijven aanpassen aan de werkelijke situat
 | 1ste uur | | | | |Proj 1 uur |  |
 | 2de uur  | | | | |Proj 1 uur  |  |
 | 3de uur  | | | | | |  |
-| 4de uur  | | |Planing | | |  |
-| 5de uur  | | |PvA | | |  |
+| 4de uur  | | |Proj Planing | | |  |
+| 5de uur  | | |Proj PvA / debrief| | |  |
 | 6de uur  | | | | | |  |
 | 7de uur  | | | | |Werken |  |
 | 8de uur  | | | | |Werken |  |
