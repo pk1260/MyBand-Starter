@@ -23,7 +23,7 @@ Schrijf in dit document de debriefing voor jouw MyBand project
            
 * Welke globale planning is er?
 
- ||| W | Datum | Werkzaamheden | Inleveren / Opleveren | Bijzonderheden |
+ |W|| W | Datum | Werkzaamheden | Inleveren / Opleveren | Bijzonderheden |
  ------ |------ | ----- | ------ |---- |------ |---- | 
  1 |7-10 mei|Project briefing & kickstart|Git repository link README Project plan Trello Scrum Board link| |
  2 |13-17 mei|User stories Wireframes|Backlog / User stories Wireframes Planning sprint 1|do 16 mei: studiedag|
