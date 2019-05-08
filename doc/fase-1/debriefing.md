@@ -5,21 +5,21 @@ Schrijf in dit document de debriefing voor jouw MyBand project
 * Een website crearen die over
     - jou favorite band, persoon of bedrijf gaat
 
-* Een website crearen
-    #Backend
-      - Alle inhoud van Database
-      - Gebouwd op MVC module
-      - Zoekbare DataBase
-      - Pagination gebruik
-      - CMS op de pagina
-      - Login Systeem voor CMS
+* Een website crearen met
+    backend
+    - Alle inhoud van Database
+    - Gebouwd op MVC module
+    - Zoekbare DataBase
+    - Pagination gebruik
+    - CMS op de pagina
+    - Login Systeem voor CMS
      
-     #Backend
-           - 2 Lay-outs
-           - Responsive CSS Grid
-           - modaal venster
-           - Pagination gebruik
-           - min 1 ajax functie
+    frontend
+     - 2 Lay-outs
+     - Responsive CSS Grid
+     - modaal venster
+     - Pagination gebruik
+     - min 1 ajax functie
            
 * Welke globale planning is er?
 
