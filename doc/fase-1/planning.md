@@ -70,7 +70,7 @@ Deze planning is een levend document (blijven aanpassen aan de werkelijke situat
 ##### WEEK 6
 |         | ma 10/6 | di 11/6 | wo 12/6 | do 13/6 | vr 14/6 | weekend |
 | ------ |------ | ---- | ------ |---- |------ |---- | 
-| 1ste uur | | | | GEEN LES | |  |
+| 1ste uur | | | | GEEN LES |Proj 1 uur |  |
 | 2de uur | | | | |Proj 1 uur  |  |
 | 3de uur | |Proj 1 uur  | | | |  |
 | 4de uur | | |Proj 1 uur  | | |  |
