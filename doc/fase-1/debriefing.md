@@ -5,7 +5,7 @@ Schrijf in dit document de debriefing voor jouw MyBand project
 * Een website crearen die over
     - jou favorite band, persoon of bedrijf gaat
 
-* Een website crearen met
+* Een website crearen
     #Backend
       - Alle inhoud van Database
       - Gebouwd op MVC module
