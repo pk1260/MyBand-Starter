@@ -83,8 +83,8 @@ Deze planning is een levend document (blijven aanpassen aan de werkelijke situat
 ##### WEEK 7
 |         | ma 17/6 | di 18/6 | wo 19/6 | do 20/6 | vr 21/6 | weekend |
 | ------ |------ | ---- | ------ |---- |------ |---- | 
-| 1ste uur | | | | |Proj 1 uur 1 uur |  |
-| 2de uur | | | | |Proj 1 uur 1 uur |  |
+| 1ste uur | | | | |Proj 1 uur |  |
+| 2de uur | | | | |Proj 1 uur |  |
 | 3de uur | |Proj 1 uur  | | | |  |
 | 4de uur | | |Proj 1 uur | | |  |
 | 5de uur | | |Proj 1 uur | | |  |
