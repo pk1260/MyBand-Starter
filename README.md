@@ -40,17 +40,17 @@ Deze fase duurt 3 weken
 [Planning]: <doc/fase-1/SpaceX - Planning.md>
 [Plan van Aanpak]: <doc/fase-1/SpaceX - PvA.pdf>
 [User stories]: <doc/fase-1/SpaceX - User-stories.md>
-[Design]: <doc/fase-1/design/design.md/>
+[Design]: <doc/fase-1/design/SpaceX - Functioneel-ontwerp.md/>
 [FO]: </doc/fase-1/functioneel-ontwerp.md>
 [Flow]: <doc/fase-1/SpaceX - Flowchart.pdf>
 [Urenschatting]: <doc/fase-1/SpaceX - Urenschatting.md>
-[axShare]: <http://w2d1bw.axshare.com/>
+[axShare]: <doc/fase-1/design/SpaceX - Functioneel-ontwerp.md/>
 
 #### Fase 2: Realiseren van de opdracht (in sprints)
 
 | Milestone  | Status | Link |
 | ------ |  ------ | ------ |
-| B1-K1-W2 Product backlog                          | TODO | [Backlog]                            | Link naar Trello met Sprint planningen | |
+| B1-K1-W2 Product backlog                          | DONE | [Backlog]                            | https://trello.com/b/7lACm5HD/project-space-x | |
 | B1-K1-W2 Sprint planning 1, 2 en 3                | TODO | [Trello] / [Trello Tips]             | Link naar Trello met Sprint planningen | |
 | B1-K1-W3 Technisch Ontwerp                        | TODO | [TO]                                 | Markdown of Word/RTF| |
 
