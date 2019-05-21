@@ -36,7 +36,7 @@ Deze fase duurt 3 weken
 
 [Kwalificatiedossier]: https://kwalificaties.s-bb.nl/Handlers/DocumentLibrary.ashx?id=276758
 [README.md]: <https://github.com/JouwGithubNaam/myband/blob/master/README.md>
-[Debriefing]: <doc/fase-1/debriefing.md>
+[Debriefing]: <doc/fase-1/SpaceX - Debriefing.md>
 [Planning]: <doc/fase-1/planning.md>
 [Plan van Aanpak]: <doc/fase-1/plan-van-aanpak.md>
 [User stories]: <doc/fase-1/user-stories.md>
