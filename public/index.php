@@ -28,4 +28,77 @@
  *
  */
 
+/**
+ * Download de kant en klare "router" van de AltoRouter website en zet het bestand AltoRouter.php in je private includes map
+ * https://github.com/dannyvankooten/AltoRouter/zipball/master
+ *
+ * Lees vooral de documentatie op http://altorouter.com/
+ *
+ */
+require '../private/includes/AltoRouter.php';
 
+/**
+ * Verder willen we nog wat andere zaken instellen en goed zetten
+ * Dit staat in het bestand private/includes/init.php
+ */
+$CONFIG = require '../private/includes/config.php';
+require '../private/includes/init.php';
+
+$router = new AltoRouter();
+
+//Als jouw public folder niet te zien is als je naar http://localhoist gaat stel dan het juiste basePath in (pas dit pad aan naar jouw situatie)
+$router->setBasePath('/project-spacex/SpaceX-new/public');
+
+/**
+ * Hier stellen we de juiste "routes" in voor onze website
+ * We vertellen de router welke url naar welk stukje code (de controller) moet worden doorgestuuurd.
+ */
+
+$router->map( 'GET', '/', 'HomeController#homepage', 'home' );
+
+$router->map( 'GET', '/photos', 'PhotosController#photos', 'photos' );
+
+$router->map( 'GET', '/launch', 'LaunchController#launch', 'launch' );
+
+$router->map( 'GET', '/login', 'LoginController#login', 'login' );
+
+$router->map( 'GET', '/logout', 'LogoutController#logout', 'logout' );
+
+$router->map( 'GET', '/notfound', 'NotFoundController#notfound', 'notfound' );
+
+$router->map( 'GET', '/voorbeeld', function () {
+	echo 'Zo kun je ook een route afhandelen door een inline functie te gebruiken, maar dat wordt al snel rommelig (deze mag je dus weer weghalen of laten staan als voorbeeld';
+} );
+
+// Daarna vragen we $router of de huidige URL getmatcht kan worden.
+$match = $router->match();
+
+/**
+ * Als er een "match" is dan roepen we de controller en de juiste method aan die we zelf hebben ingesteld
+ * Je krijgt namelijk alle info terug in de $match variabele die je nodig hebt om de juiste code aan te roepen
+ * Lees in de documentatie hoe je dit allemaal kunt doen met AltoRouter
+ */
+if ( is_array( $match ) && is_callable( $match['target'] ) ) {
+	//Als het een inline function is roepen we deze meteen aan
+	call_user_func_array( $match['target'], $match['params'] );
+
+} else if ( $match !== false ) {
+	//Anders hakken we de controller#method doormidden op het "#" teken en zetten we ze in twee variabelen
+	list( $controller_name, $method ) = explode( '#', $match['target'] );
+
+	try {
+		// We maken een nieuwe "instance" aan van de juiste controller class
+		$controller = new $controller_name;
+
+		// We roepen we juiste method aan in de controller class
+		call_user_func_array( [ $controller, $method ], $match['params'] );
+
+	} catch ( \Exception $e ) {
+		echo $e->getMessage();
+		exit;
+	}
+} else {
+	// Er is geen match dus een 404 pagina
+	header( $_SERVER["SERVER_PROTOCOL"] . ' 404 Not Found' );
+	echo '404: Onbekende pagina';
+}
