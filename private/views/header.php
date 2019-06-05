@@ -11,6 +11,7 @@
     <meta name="keywords" content="Portfolio, Media, Design, Services">
     <link rel="stylesheet" href="css/menu-style.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Koi Design</title>
@@ -29,7 +30,7 @@
                 <li><a href="#">About-us</a></li>
                 <li><a href="#">Photos</a></li>
                 <li><a href="#">Launch</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a href="login">Login</a></li>
             </ul>
         </nav>
     </div>

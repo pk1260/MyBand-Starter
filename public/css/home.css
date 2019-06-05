@@ -24,13 +24,6 @@ header {
   grid-area: nav;
 }
 
-/*FRONT MODEL*/
-.img {
-  background: url("../img/spacex.jpg") center no-repeat;
-  grid-area: img;
-  height: 96vh;
-}
-
 /*ABOUT US BLACK*/
 .aboutus {
   background: #282828;
@@ -65,7 +58,7 @@ header {
 .img {
   background: url("../img/spacex.jpg")  60% 65% no-repeat;
   grid-area: img;
-  height: 100vh;
+  height: 96vh;
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(2, 1fr);
   display: grid;
@@ -190,12 +183,12 @@ header {
 }
 
 /*FOOTER*/
-footer {
-  background-color: #8d8d8d;
-  grid-area: ft;
-  height: 15vh;
-  margin: 0;
-}
+/*footer {*/
+/*  background-color: #8d8d8d;*/
+/*  grid-area: ft;*/
+/*  height: 15vh;*/
+/*  margin: 0;*/
+/*}*/
 
 /*TABLET VIEW*/
 @media only screen and (max-width: 768px) {
@@ -222,7 +215,7 @@ footer {
   .img {
     background: url("../img/spacex.jpg")  60% 65% no-repeat;
     grid-area: img;
-    height: 100vh;
+    height: 96vh;
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(2, 1fr);
     display: grid;
@@ -385,7 +378,7 @@ footer {
   .img {
     background: url("../img/spacex.jpg")  60% 65% no-repeat;
     grid-area: img;
-    height: 100vh;
+    height: 96vh;
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(2, 1fr);
     display: grid;
@@ -457,9 +450,9 @@ footer {
     text-transform: uppercase;
   }
   /*FOOTER*/
-  footer {
-    background-color: #8d8d8d;
-    grid-area: ft;
-    height: 15vh;
-  }
+  /*footer {*/
+  /*  background-color: #8d8d8d;*/
+  /*  grid-area: ft;*/
+  /*  height: 15vh;*/
+  /*}*/
 }
