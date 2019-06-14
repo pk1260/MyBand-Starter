@@ -1,6 +1,5 @@
-
 <div class="login-container">
-    <div class="login-img"></div>
+    <div class="login-img" style="background: url(<?php echo url('/img/') . getBackground('bg-launch'); ?>)"></div>
 
     <div class="login-form">
         <form class="login-box" action="" method="post">
@@ -8,8 +7,8 @@
             <input type="text" name="" value="" placeholder="Username">
             <input type="password" name="" value="" placeholder="Password">
             <input type="submit" name="" value="Login">
-            <p>Don't have a account?</p>
-            <a class="login-register" href="">register here</a>
+            <p>Don't have an account?</p>
+            <a class="login-register" href="register">register here</a>
         </form>
     </div>
 </div>

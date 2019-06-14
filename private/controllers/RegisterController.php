@@ -8,7 +8,7 @@
  * Geeft de gegevens aan de "view" laag (HTML template) om weer te geven
  *
  */
-class RegisterControllerController {
+class RegisterController {
 
     function registerpage(){
 

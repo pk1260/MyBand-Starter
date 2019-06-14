@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  text-align: center;
+  background-color: #F5F5F5;
+  font-family: roboto;
+}
+
+.zoek {
+  padding: 1em;
+}
+
+.tabel-header {
+  text-transform: uppercase;
+  padding: .5em;
+}
+
+.center {
+  margin: 0 auto;
+  width: 80%;
+  background-color: #fff;
+  height: 100vh;
+}
+
+.smal {
+  padding: .5em;
+  font-weight: 600;
+}
+
+.breed {
+  text-align: left;
+  padding: .6em 0 .6em 0;
+}
+
+#keyword {
+  border: 1px solid blue;
+  border-radius: 2px;
+}

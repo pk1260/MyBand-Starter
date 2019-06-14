@@ -1,0 +1,27 @@
+#show_up {
+    width: auto;
+    height: auto;
+    border: 4px solid blue;
+    border-radius: 6px;
+    display: none;
+    margin: 0 auto;
+}
+
+#show_up a{
+    border-bottom: 1px solid #ddd;
+    display: block;
+    padding: 5px;
+}
+
+.tabel {
+  border: 2px solid black;
+  border-radius: 6px;
+}
+td {
+  border: 1px solid black;
+}
+th {
+  background-color: blue;
+  color: white;
+}
+tr:hover {background-color: #ddd;}

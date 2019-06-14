@@ -15,7 +15,6 @@ body {
 }
 
 .login-img {
-    background: url("../img/launch.jpg") 34% 5% no-repeat;
     height: 96vh;
 }
 
@@ -28,10 +27,8 @@ body {
 .login-box {
     grid-column: 2/3;
     grid-row: 2/3;
-    width: 800px;
     padding: 40px;
     text-align: center;
-    place-items: center;
 }
 
 .login-box h1 {
@@ -90,4 +87,28 @@ body {
     font-size: large;
     text-decoration: underline;
     text-decoration-color: #005288;
+}
+@media only screen and (max-width: 1200px) {
+    .login-box input[type = "text"], .login-box input[type = "password"], .login-box input[type = "submit"] {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 740px)  {
+    .login-img {
+        display: none;
+    }
+
+    .login-container {
+        grid-template-columns: repeat(3, 1fr);
+        display: grid;
+    }
+
+    .login-form {
+        grid-column: 2/3;
+    }
+
+    .login-box input[type = "text"], .login-box input[type = "password"], .login-box input[type = "submit"] {
+        width: 300px;
+    }
 }

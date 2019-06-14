@@ -47,22 +47,24 @@ require '../private/includes/init.php';
 $router = new AltoRouter();
 
 //Als jouw public folder niet te zien is als je naar http://localhoist gaat stel dan het juiste basePath in (pas dit pad aan naar jouw situatie)
-$router->setBasePath('/project-spacex/SpaceX-new/public');
+$router->setBasePath($CONFIG['BASE_URL']);
 
 /**
  * Hier stellen we de juiste "routes" in voor onze website
  * We vertellen de router welke url naar welk stukje code (de controller) moet worden doorgestuuurd.
  */
 
-$router->map( 'GET', '/', 'HomeController#homepage', 'home' );
+$router->map( 'GET', '/home', 'HomeController#homepage', 'home' );
 
-$router->map( 'GET', '/photos', 'PhotosController#photos', 'photos' );
+$router->map( 'GET', '/photos', 'PhotosController#photospage', 'photos' );
 
-$router->map( 'GET', '/launch', 'LaunchController#launch', 'launch' );
+$router->map( 'GET', '/about', 'AboutController#aboutpage', 'about-us' );
 
-$router->map( 'GET', '/login', 'LoginController#login', 'login' );
+$router->map( 'GET', '/launch', 'LaunchController#launchpage', 'launch' );
 
-$router->map( 'GET', '/logout', 'LogoutController#logout', 'logout' );
+$router->map( 'GET', '/login', 'LoginController#loginpage', 'login' );
+
+$router->map( 'GET', '/register', 'RegisterController#registerpage', 'register' );
 
 $router->map( 'GET', '/notfound', 'NotFoundController#notfound', 'notfound' );
 

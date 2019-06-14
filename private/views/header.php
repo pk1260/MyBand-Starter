@@ -12,9 +12,16 @@
     <link rel="stylesheet" href="css/menu-style.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/photos.css">
+    <link rel="stylesheet" href="css/launch.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/ajax.css" type="text/css" />
+    <script src="js/ajax.js"></script>
+    <script src="js/jQuery-min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <title>Koi Design</title>
+    <title>SpaceX</title>
+    <link rel="shortcut icon" type="image/png" href="img/spacex-fav.png">
 </head>
 
 <body id="site">
@@ -25,11 +32,11 @@
     <div class="overlay"></div>
     <div class="container">
         <nav>
-            <h1 class="brand"><a href="">SPACE<span>X</span></a></h1>
+            <h1 class="brand"><a href="home">SPACE<span>X</span></a></h1>
             <ul>
-                <li><a href="#">About-us</a></li>
-                <li><a href="#">Photos</a></li>
-                <li><a href="#">Launch</a></li>
+                <li><a href="about">About-us</a></li>
+                <li><a href="photos">Photos</a></li>
+                <li><a href="launch">Launch</a></li>
                 <li><a href="login">Login</a></li>
             </ul>
         </nav>

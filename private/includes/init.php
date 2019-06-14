@@ -1,6 +1,8 @@
 <?php
+require __DIR__ .'/functions.php';
+require __DIR__ .'/../models/model.php';
 /**
- * Onderstaande code zorgt ervoor dat als we in onze code een controller willen gebruiken bijv:
+ * Onderstaande code zorgt ervoordat als we in onze code een controller willen gebruiken bijv:
  *
  * $controller = new HomeController();
  *

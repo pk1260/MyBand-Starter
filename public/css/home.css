@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*BASIC SETTINGS*/
+/*MOBILE VIEW*/
 body {
   margin: 0;
   font-family: roboto;
@@ -8,15 +8,15 @@ body {
 
 #site {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: 1fr;
   grid-template-areas:
-  "nav nav nav nav nav nav"
-  "img img img img img img"
-  "abt abt abt abt abt abt"
-  "box1 box1 box1 box1 box1 box1"
-  "box2 box2 box2 box2 box2 box2"
-  "box3 box3 box3 box3 box3 box3"
-  "ft ft ft ft ft ft"
+          "nav"
+          "img"
+          "abt"
+          "box1"
+          "box2"
+          "box3"
+          "ft"
 }
 
 /*NAVIGATIE*/
@@ -36,11 +36,6 @@ header {
   display: grid;
 }
 
-/*ABOUT US BLACK*/
-.about-h2 {
-  font-size: 200%;
-  padding-bottom: .3em;
-}
 .aboutus-text-left {
   margin: 2em;
   grid-row: 2/3;
@@ -56,7 +51,7 @@ header {
 
 /*FRONT MODEL*/
 .img {
-  background: url("../img/spacex.jpg")  60% 65% no-repeat;
+  /*background: url("../img/spacex.jpg")  60% 65% no-repeat;*/
   grid-area: img;
   height: 96vh;
   grid-template-rows: repeat(5, 1fr);
@@ -78,6 +73,23 @@ header {
   color: #005288;
 }
 
+/*ABOUT US BLACK*/
+.aboutus-text {
+  color: white;
+  padding: 2em;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+/*CONTENT BOX 1*/
+.box-1 {
+  grid-area: box1;
+  height: 33.3vh;
+  text-align: center;
+  grid-template-rows: repeat(3, 1fr);
+  display: grid;
+  border-bottom: #282828 1px solid;
+}
+
 /*CONTENT BOX 1*/
 .box-1 {
   grid-area: box1;
@@ -97,7 +109,7 @@ header {
   right: 0;
   opacity: 0;
   transition: .5s ease;
-  background: url("../img/elon.jpg") center no-repeat;
+  /*background: url("../img/elon.jpg") center no-repeat;*/
   background-size: cover;
   grid-template-rows: repeat(3, 1fr);
   display: grid;
@@ -110,7 +122,7 @@ header {
   right: 0;
   opacity: 0;
   transition: .5s ease;
-  background: url("../img/burst.jpg") center no-repeat;
+  /*background: url("../img/burst.png") center no-repeat;*/
   background-size: cover;
   grid-template-rows: repeat(3, 1fr);
   display: grid;
@@ -123,7 +135,7 @@ header {
   right: 0;
   opacity: 0;
   transition: .5s ease;
-  background: url("../img/launch.jpg") center no-repeat;
+  /*background: url("../img/launch.jpg") center no-repeat;*/
   background-size: cover;
   grid-template-rows: repeat(3, 1fr);
   display: grid;
@@ -182,277 +194,35 @@ header {
   text-transform: uppercase;
 }
 
-/*FOOTER*/
-/*footer {*/
-/*  background-color: #8d8d8d;*/
-/*  grid-area: ft;*/
-/*  height: 15vh;*/
-/*  margin: 0;*/
-/*}*/
-
-/*TABLET VIEW*/
-@media only screen and (max-width: 768px) {
-  /*BASIC SETTINGS*/
-  .site {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-            "nav nav nav"
-            "img img img "
-            "abt abt abt"
-            "box1 box1 box1"
-            "box2 box2 box2"
-            "box3 box3 box3"
-            "ft ft ft"
-  }
-
-  /*NAVIGATIE*/
-  header {
-    grid-area: nav;
-  }
-
-  /*FRONT MODEL*/
-  .img {
-    background: url("../img/spacex.jpg")  60% 65% no-repeat;
-    grid-area: img;
-    height: 96vh;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    display: grid;
-  }
-
-  .img-text {
-    color: white;
-    grid-row: 3/5;
-    padding-left: 2em;
-  }
-  .img-text h1 {
-    padding-bottom: .3em;
-    font-size: 200%;
-  }
-
-  .img-text span{
-    color: #005288;
-  }
-
-  /*ABOUT US BLACK*/
-  .aboutus-text {
-    color: white;
-    padding: 2em;
-    grid-row: 2/3;
-  }
-
-  .aboutus-text h2 {
-    font-size: 200%;
-    padding-bottom: .3em;
-  }
-
-  /*CONTENT BOX 1*/
-  .box-1 {
-    grid-area: box1;
-    height: 33.3vh;
-    text-align: center;
-    grid-template-rows: repeat(3, 1fr);
-    display: grid;
-    border-bottom: #282828 1px solid;
-    position: relative;
-  }
-
+/* TABLET VIEW */
+@media screen and (min-width: 780px) {
   .overlay-1 {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    transition: .5s ease;
-    background: url("../img/elon.jpg") center no-repeat;
-    background-size: cover;
-    grid-template-rows: repeat(3, 1fr);
-    display: grid;
-  }
-  .overlay-2 {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    transition: .5s ease;
-    background: url("../img/burst.jpg") center no-repeat;
-    background-size: cover;
-    grid-template-rows: repeat(3, 1fr);
-    display: grid;
-  }
-  .overlay-3 {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    transition: .5s ease;
-    background: url("../img/launch.jpg") center no-repeat;
-    background-size: cover;
-    grid-template-rows: repeat(3, 1fr);
-    display: grid;
-  }
-  .text {
-    font-size: large;
-    grid-row: 2/3;
-    padding-top: 1.4em;
-    text-transform: uppercase;
-  }
-
-  .box-1:hover .overlay-1 {
-    opacity: 1;
-    color: white;
-  }
-
-  .box-2:hover .overlay-2 {
-    opacity: 1;
-    color: white;
-  }
-
-  .box-3:hover .overlay-3 {
-    opacity: 1;
-    color: white;
-  }
-
-  /*CONTENT BOX 2*/
-  .box-2 {
-    grid-area: box2;
-    height: 33.3vh;
-    text-align: center;
-    grid-template-rows: repeat(3, 1fr);
-    display: grid;
-    border-bottom: #282828 1px solid;
-    position: relative;
-  }
-
-  /*CONTENT BOX 3*/
-  .box-3 {
-    grid-area: box3;
-    height: 33.3vh;
-    text-align: center;
-    grid-template-rows: repeat(3, 1fr);
-    display: grid;
-    border-bottom: #282828 1px solid;
-    position: relative;
-  }
-
-  .box-text {
-    font-size: large;
-    grid-row: 2/3;
-    padding-top: 1.4em;
-  }
-
-  .box-text h2 {
-    text-transform: uppercase;
+    background-position: 70% 30%;
   }
 }
 
-
-/*MOBILE VIEW*/
-@media only screen and (max-width: 360px) {
-  /*BASIC SETTINGS*/
-  .site {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-            "nav"
-            "img"
-            "abt"
-            "box1"
-            "box2"
-            "box3"
-            "ft"
+/* DESKTOP */
+@media screen and (min-width: 1200px) {
+  .img-text h1{
+    font-size: 3.5em;
   }
 
-  /*NAVIGATIE*/
-  header {
-    grid-area: nav;
+  .img-text h2{
+    font-size: 3em;
   }
 
-  /*FRONT MODEL*/
-  .img {
-    background: url("../img/spacex.jpg")  60% 65% no-repeat;
-    grid-area: img;
-    height: 96vh;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    display: grid;
+  .aboutus-text-left h2 {
+    font-size: 2em;
+    font-weight: 600;
   }
 
-  .img-text {
-    color: white;
-    grid-row: 3/5;
-    padding-left: 2em;
+  .aboutus-text-left p {
+    font-size: 1.5em;
+    font-weight: 300;
   }
 
-  .img-text h1 {
-    padding-bottom: .3em;
-    font-size: 200%;
+  .aboutus-text-right p {
+    font-size: 1.5em;
+    font-weight: 300;
   }
-
-  .img-text span{
-   color: #005288;
-  }
-
-  /*ABOUT US BLACK*/
-  .aboutus-text {
-    color: white;
-    padding: 2em;
-    grid-template-rows: repeat(3, 1fr);
-  }
-
-  .about-h2 {
-    font-size: 150%;
-  }
-
-  /*CONTENT BOX 1*/
-  .box-1 {
-    grid-area: box1;
-    height: 33.3vh;
-    text-align: center;
-    grid-template-rows: repeat(3, 1fr);
-    display: grid;
-    border-bottom: #282828 1px solid;
-  }
-
-  /*CONTENT BOX 2*/
-  .box-2 {
-    grid-area: box2;
-    height: 33.3vh;
-    text-align: center;
-    grid-template-rows: repeat(3, 1fr);
-    display: grid;
-    border-bottom: #282828 1px solid;
-  }
-
-  /*CONTENT BOX 3*/
-  .box-3 {
-    grid-area: box3;
-    height: 33.3vh;
-    text-align: center;
-    grid-template-rows: repeat(3, 1fr);
-    display: grid;
-    border-bottom: #282828 1px solid;
-  }
-
-  .box-text {
-    font-size: large;
-    grid-row: 2/3;
-    padding-top: 1.4em;
-  }
-
-  .box-text h2 {
-    text-transform: uppercase;
-  }
-  /*FOOTER*/
-  /*footer {*/
-  /*  background-color: #8d8d8d;*/
-  /*  grid-area: ft;*/
-  /*  height: 15vh;*/
-  /*}*/
 }

@@ -1,8 +1,6 @@
 <?php
 
-function dbConnect()
-{
-
+function dbConnect() {
     $config = require __DIR__ . '/config.php';
 
     try {
@@ -18,5 +16,10 @@ function dbConnect()
     } catch (\PDOException $e) {
         echo 'Fout bij maken van database verbinding: ' . $e->getMessage();
     }
+}
 
+function url($path){
+    global $CONFIG;
+
+    return $CONFIG['BASE_URL'] . $path;
 }

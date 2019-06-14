@@ -8,10 +8,10 @@
  * Geeft de gegevens aan de "view" laag (HTML template) om weer te geven
  *
  */
-class HomeController {
-	function homepage(){
+class AboutController {
+	function aboutpage(){
 		include __DIR__ . '/../views/header.php';
-        include __DIR__ . '/../views/home.php';
+        include __DIR__ . '/../views/about.php';
         include __DIR__ . '/../views/footer.php';
 	}
 }
