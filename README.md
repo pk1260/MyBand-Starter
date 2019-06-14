@@ -1,10 +1,11 @@
 ## SpaceX
-www.mijnliveomgeving.com is een website van (..jouw naam..) waar gebruikers kunnen (..nut gebruiker..) bedoeld voor (..doelgroep..)
-De website is enigszins te vergelijken met (..concurrentie1..) of (..concurrentie2..) maar toch anders omdat (..uniek aspect..)
+http://18251.hosts1.ma-cloud.nl/bewijzenmap/periode1.4/project-spacex/public/
+is een website van Pascal Kuiper waar gebruikers kunnen Kijken naar spacex informatie bedoeld voor 14+
+De website is enigszins te vergelijken met Een portfolio over SpaceX of Informatie website maar toch anders omdat ik ze bijde mix
 
 ### Uniek aan dit concept is: 
- * eerste u.s.p. (vul hier in, waarin jouw site anders is dan alle anderen)
- * tweede u.s.p. (vul hier in, waar jouw site door gaat opvallen, wat zal iedereen onthouden van jouw site?)
+ * eerste u.s.p. Onze eigen inzet in ons eigen passie project
+ * tweede u.s.p. Onze eigen stijlen en creative waargeving
 
 ---
 #### Milestones 
@@ -23,7 +24,7 @@ Deze fase duurt 3 weken
 
 | Milestone  | Status | Link | Type Document of cloudservice |
 | ------ |  ------ | ------ | ------ |
-| README                                            | TODO | [README.md]  (dit document)          | MarkDown |
+| README                                            | DONE | [README.md]  (dit document)          | MarkDown |
 | B1-K1-W1 Debriefing                               | DONE | [Debriefing]                         | Markdown |
 | B1-K1-W2 Planning                                 | DONE | [Planning]                           | Markdown |
 | B1-K1-W2 Plan van aanpak                          | DONE | [Plan van Aanpak]                    | Markdown of Word/RTF|
