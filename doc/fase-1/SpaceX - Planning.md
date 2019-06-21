@@ -10,8 +10,8 @@ Deze planning is een levend document (blijven aanpassen aan de werkelijke situat
 ##### WEEK 1
 |         | ma 6/5 | di 7/5 | wo 8/5 | do 9/5 | vr 10/5 | weekend |
 | ------ |------ | ---- | ------ |---- |------ |---- | 
-| 1ste uur | | | | |Proj 1 uur |  |
-| 2de uur  | | | | |Proj 1 uur  |  |
+| 1ste uur | | | | |Proj 1 uur | 1 uur |
+| 2de uur  | | | | |Proj 1 uur  | 1 uur |
 | 3de uur  | | | | | |  |
 | 4de uur  | | |Proj Planing | | |  |
 | 5de uur  | | |Proj PvA / debrief| | |  |
@@ -25,8 +25,8 @@ Deze planning is een levend document (blijven aanpassen aan de werkelijke situat
 | 1ste uur | | | | STUDIEDAG |Proj 1 uur  |  |
 | 2de uur  | | | | STUDIEDAG |Proj 1 uur  |  |
 | 3de uur  | |Proj 1 uur  || STUDIEDAG | |  |
-| 4de uur  | | |Proj 1 uur  | STUDIEDAG | |  |
-| 5de uur  | | |Proj 1 uur  | STUDIEDAG | |  |
+| 4de uur  | | |Proj 1 uur  | STUDIEDAG | | 1 uur |
+| 5de uur  | | |Proj 1 uur  | STUDIEDAG | | 1 uur |
 | 6de uur  | | | | STUDIEDAG | |  |
 | 7de uur  | | | | STUDIEDAG | |  |
 | 8de uur  | | | | STUDIEDAG | |  |
@@ -34,9 +34,9 @@ Deze planning is een levend document (blijven aanpassen aan de werkelijke situat
 ##### WEEK 3
 |         | ma 20/5 | di 21/5 | wo 22/5 | do 23/5 | vr 24/5 | weekend |
 | ------ |------ | ---- | ------ |---- |------ |---- | 
-| 1ste uur | | | | |Proj 1 uur |  |
-| 2de uur  | | | | |Proj 1 uur |  |
-| 3de uur  | |Proj 1 uur | | | |  |
+| 1ste uur | | | | |Proj 1 uur | 1 uur |
+| 2de uur  | | | | |Proj 1 uur | 1 uur |
+| 3de uur  | |Proj 1 uur | | | | 1 uur |
 | 4de uur  | | |Proj 1 uur  | | |  |
 | 5de uur  | | |Proj 1 uur  | | |  |
 | 6de uur  | | | | | |  |
@@ -47,9 +47,9 @@ Deze planning is een levend document (blijven aanpassen aan de werkelijke situat
 |         | ma 27/5 | di 28/5 | wo 29/5 | do 30/5 | vr 31/5 | weekend |
 | ------ |------ | ---- | ------ |---- |------ |---- | 
 | 1ste uur | | | | HEMELVAART |Proj 1 uur  |  |
-| 2de uur  | | | | HEMELVAART |Proj 1 uur  |  |
-| 3de uur  | |Proj 1 uur  | | HEMELVAART | |  |
-| 4de uur  | | |Proj 1 uur | HEMELVAART | |  |
+| 2de uur  | | | | HEMELVAART |Proj 1 uur  | 1 uur |
+| 3de uur  | |Proj 1 uur  | | HEMELVAART | | 1 uur |
+| 4de uur  | | |Proj 1 uur | HEMELVAART | | 1 uur |
 | 5de uur  | | |Proj 1 uur | HEMELVAART | |  |
 | 6de uur  | | | | HEMELVAART | |  |
 | 7de uur  | | | | HEMELVAART | |  |
@@ -60,9 +60,9 @@ Deze planning is een levend document (blijven aanpassen aan de werkelijke situat
 | ------ |------ | ---- | ------ |---- |------ |---- | 
 | 1ste uur | | | | | Proj 1 uur |  |
 | 2de uur | | | | |Proj 1 uur  |  |
-| 3de uur | |Proj 1 uur  | | | |  |
-| 4de uur | | |Proj 1 uur | | |  |
-| 5de uur | | |Proj 1 uur | | |  |
+| 3de uur | |Proj 1 uur  | | | | 1 uur |
+| 4de uur | | |Proj 1 uur | | | 1 uur |
+| 5de uur | | |Proj 1 uur | | | 1 uur |
 | 6de uur | | | | | |  |
 | 7de uur | | | | | |  |
 | 8de uur | | | | | |  |
@@ -71,8 +71,8 @@ Deze planning is een levend document (blijven aanpassen aan de werkelijke situat
 |         | ma 10/6 | di 11/6 | wo 12/6 | do 13/6 | vr 14/6 | weekend |
 | ------ |------ | ---- | ------ |---- |------ |---- | 
 | 1ste uur | | | | GEEN LES |Proj 1 uur |  |
-| 2de uur | | | | |Proj 1 uur  |  |
-| 3de uur | |Proj 1 uur  | | | |  |
+| 2de uur | | | | |Proj 1 uur  | 1 uur |
+| 3de uur | |Proj 1 uur  | | | |1 uur  |
 | 4de uur | | |Proj 1 uur  | | |  |
 | 5de uur | | |Proj 1 uur  | | |  |
 | 6de uur | | | | | |  |
