@@ -1,8 +1,8 @@
 <?php
 
 // Veel gebruikte functies inladen
-require __DIR__ . '/../private/functions.php';
-
+//require __DIR__ . 'functions.php';
+require 'functions.php';
 function search($text){
     $database = dbConnect();
     // filter de data die binnenkomt
@@ -14,8 +14,9 @@ function search($text){
     // laat de titels op de pagina zien
     while($titels = $get_titel->fetch(PDO::FETCH_ASSOC)){
         // laat elke titel als link zien
-        echo '<a href="">'.$titels['titel'].'</a>';
-
+        ?>
+        <a href="?search_keyword=<?php echo urlencode($text)?>"><?php echo $titels['titel']; ?></a>
+    <?php
     }
 }
 // call de zoek functie met de data van Ajax

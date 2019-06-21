@@ -6,7 +6,7 @@ $(document).ready(function(e){
         var text = $(this).val();
         $.ajax({
             type: 'GET',
-            url: 'search.php',
+            url: '../private/includes/search.php',
             data: 'txt=' + text,
             success: function(data){
                 $("#show_up").html(data);
@@ -14,3 +14,5 @@ $(document).ready(function(e){
         });
     })
 });
+
+

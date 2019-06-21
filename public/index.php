@@ -60,11 +60,17 @@ $router->map( 'GET', '/photos', 'PhotosController#photospage', 'photos' );
 
 $router->map( 'GET', '/about', 'AboutController#aboutpage', 'about-us' );
 
-$router->map( 'GET', '/launch', 'LaunchController#launchpage', 'launch' );
+$router->map( 'GET', '/launch', 'LaunchController#launchpage', 'launch-1' );
 
-$router->map( 'GET', '/login', 'LoginController#loginpage', 'login' );
+$router->map( 'POST', '/launch', 'LaunchController#launchpage', 'launch-2' );
 
-$router->map( 'GET', '/register', 'RegisterController#registerpage', 'register' );
+$router->map( 'GET', '/login', 'LoginController#loginpage', 'login-1' );
+
+$router->map( 'POST', '/login', 'LoginController#loginpage', 'login-2' );
+
+$router->map( 'GET', '/register', 'RegisterController#registerpage', 'register-1' );
+
+$router->map( 'POST', '/register', 'RegisterController#registerpage', 'register-2' );
 
 $router->map( 'GET', '/notfound', 'NotFoundController#notfound', 'notfound' );
 

@@ -17,6 +17,8 @@ define("RIJ_PER_PAGINA", 3);
 $zoek_keyword = '';
 if (!empty($_POST['search']['keyword'])) {
     $zoek_keyword = $_POST['search']['keyword'];
+}else if (!empty($_GET['search_keyword'])) {
+    $zoek_keyword = $_GET['search_keyword'];
 }
 
 $sql = 'SELECT * FROM launch WHERE titel LIKE :keyword OR omschrijving LIKE :keyword OR datum LIKE :keyword ORDER BY datum DESC ';
@@ -59,7 +61,7 @@ $pdo_statement->execute();
 $result = $pdo_statement->fetchAll();
 
 ?>
-<div class="img" style="background: url(<?php echo url('/img/') . getBackground('bg-boundry'); ?>) 60% 30%">
+<div class="img" style="background: url(<?php echo url('/img/') . getBackground('bg-launch'); ?>) 60% 0%">
     <div id="img-text">
         <h1><?php echo getH1('main-launch'); ?></h1>
         <h2><?php echo getH2('main-launch'); ?></h2>
@@ -68,30 +70,29 @@ $result = $pdo_statement->fetchAll();
 
 <div class="launch-content">
     <div class="launch-tabel">
-        <form name='zoekformulier' action='' method='post'>
+        <form action="<?php echo url('/launch')?>" name='zoekformulier' autocomplete="off" method="post">
             <div class='zoek'>Search<br>
-                <input type='text' name='search[keyword]' value="<?php echo $zoek_keyword; ?>" id='search'
-                       maxlength='25'>
+                <input type='text' name='search[keyword]' value="<?php echo $zoek_keyword; ?>" id='search' maxlength='25' placeholder="what are you looking for">
                 <div id="show_up"></div>
             </div>
-            <table>
+            <table class="table-fill">
                 <thead>
                 <tr>
-                    <th class='tabel-header'>Name</th>
-                    <th class='tabel-header'>Description</th>
-                    <th class='tabel-header'>Date</th>
+                    <th class='text-left'>Name</th>
+                    <th class='text-left'>Description</th>
+                    <th class='text-left'>Date</th>
                 </tr>
                 </thead>
 
-                <tbody id='tabel-body'>
+                <tbody id='tabel-hover'>
                 <?php
                 if (!empty($result)) {
                     foreach ($result as $row) {
                         ?>
                         <tr class='tabel-rij'>
-                            <td class="smal"><?php echo $row['titel']; ?></td>
-                            <td class="breed"><?php echo $row['omschrijving']; ?></td>
-                            <td class="smal"><?php echo $row['datum']; ?></td>
+                            <td class="text-left"><?php echo $row['titel']; ?></td>
+                            <td class="text-left"><?php echo $row['omschrijving']; ?></td>
+                            <td class="text-left"><?php echo $row['datum']; ?></td>
                         </tr>
                         <?php
                     }

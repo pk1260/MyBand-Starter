@@ -1,8 +1,8 @@
 <div class="login-container">
-    <div class="login-img" style="background: url(<?php echo url('/img/') . getBackground('bg-launch'); ?>)"></div>
+    <div class="login-img" style="background: url(<?php echo url('/img/') . getBackground('bg-launch'); ?>) 30% 0%"></div>
 
     <div class="login-form">
-        <form class="login-box" action="" method="post">
+        <form class="login-box" action="<?php echo url('/register')?>" method="post">
             <h1>Register</h1>
             <input type="text" value="" placeholder="First Name">
             <input type="text" value="" placeholder="Email">
