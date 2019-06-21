@@ -1,5 +1,5 @@
 ## SpaceX
-http://18251.hosts1.ma-cloud.nl/bewijzenmap/periode1.4/project-spacex/public/
+http://18251.hosts1.ma-cloud.nl/bewijzenmap/periode1.4/project-spacex/public/home
 is een website van Pascal Kuiper waar gebruikers kunnen Kijken naar spacex informatie bedoeld voor 14+
 De website is enigszins te vergelijken met Een portfolio over SpaceX of Informatie website maar toch anders omdat ik ze bijde mix
 
@@ -52,7 +52,7 @@ Deze fase duurt 3 weken
 | Milestone  | Status | Link |
 | ------ |  ------ | ------ |
 | B1-K1-W2 Product backlog                          | DONE | [Backlog]                            | https://trello.com/b/7lACm5HD/project-space-x | |
-| B1-K1-W2 Sprint planning 1, 2 en 3                | DONE | [Trello] / [Trello Tips]             | Link naar Trello met Sprint planningen | |
+| B1-K1-W2 Sprint planning 1, 2 en 3                | DONE | [Trello] / [Trello Tips]             | https://trello.com/b/7lACm5HD/project-space-x planningen | |
 | B1-K1-W3 Technisch Ontwerp                        | DONE | [TO]                                 | Markdown of Word/RTF| |
 
 [Backlog]: </doc/fase-2/technisch-ontwerp.md>
@@ -64,9 +64,9 @@ Deze fase duurt 3 weken
 
 | Milestone  | Status | Link |
 | ------ |  ------ | ------ |
-| B1-K3-W2 Link naar de live omgeving                        |  DONE |  <http://18251.hosts1.ma-cloud.nl/bewijzenmap/periode1.4/project-spacex/public/> |
-| B1-K3-W2 Gebruikersdocumentatie / instructie               |  TODO |  [Gebruikers documentatie] |
-| B1-K3-W3 Evaluatie                                         |  TODO |  [Evaluatie] |
+| B1-K3-W2 Link naar de live omgeving                        |  DONE |  <http://18251.hosts1.ma-cloud.nl/bewijzenmap/periode1.4/project-spacex/public/home> |
+| B1-K3-W2 Gebruikersdocumentatie / instructie               |  DONE |  [Gebruikers documentatie] |
+| B1-K3-W3 Evaluatie                                         |  DONE |  [Evaluatie] |
 
 [Gebruikers documentatie]: <doc/fase-3/gebruikersdocumentatie.md>
 [Evaluatie]: <doc/fase-3/evaluatie.md>
