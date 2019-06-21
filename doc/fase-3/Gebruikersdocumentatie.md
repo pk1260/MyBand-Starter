@@ -13,4 +13,5 @@ Krijg je uitgebreide informatie over het bedrijf spaceX <br>
 Krijg je de mooiste foto's te zien van de SpaceX raket familie<br> 
 ##### Op de /Launch page/  
 Krijg je informatie over lanceringen van SpaceX en kan je zelf ook zoeken naar lanceringen<br> 
-##### Op de /Login page/ <br> 
+##### Op de /Login page/ 
+Wou ik dat je kon inloggen maar ivm dat het project weinig tijd had ivm alle uitval heb ik er geen login systeem erin gezet<br> 
