@@ -1,0 +1,10 @@
+.launch-content {
+    width: 95%;
+    margin: 0 auto;
+    grid-template-columns: repeat(5, 1fr);
+    display: grid;
+}
+
+.launch-tabel {
+    grid-column: 2/5;
+}

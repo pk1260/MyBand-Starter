@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: roboto;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+.login-container {
+    width: 100vw;
+    height: 96vh;
+    background: white;
+    grid-area: img;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+}
+
+.login-img {
+    height: 96vh;
+}
+
+.login-form {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+}
+
+/*LOGIN BOX STYLING*/
+.login-box {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 40px;
+    text-align: center;
+}
+
+.login-box h1 {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.login-box input[type = "text"], .login-box input[type = "password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #005288;
+    padding: 14px 10px;
+    width: 500px;
+    outline: none;
+    color: #808080;
+    border-radius: 24px;
+    transition: .25s;
+}
+
+.login-box input[type = "text"]:focus, .login-box input[type = "password"]:focus {
+    border-color: #2ecc71;
+    transition: .25s;
+}
+
+.login-box input[type = "submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    width: 500px;
+    outline: none;
+    color: grey;
+    border-radius: 24px;
+    transition: .25s;
+    cursor: pointer;
+}
+
+.login-box input[type = "submit"]:hover {
+    background: #2ecc71;
+    color: white;
+}
+
+.login-box p {
+    padding: 1em;
+    font-size: 2em;
+}
+.login-register {
+    color: #005288;
+    font-size: large;
+    text-decoration: underline;
+    text-decoration-color: #005288;
+}
+@media only screen and (max-width: 1200px) {
+    .login-box input[type = "text"], .login-box input[type = "password"], .login-box input[type = "submit"] {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 740px)  {
+    .login-img {
+        display: none;
+    }
+
+    .login-container {
+        grid-template-columns: repeat(3, 1fr);
+        display: grid;
+    }
+
+    .login-form {
+        grid-column: 2/3;
+    }
+
+    .login-box input[type = "text"], .login-box input[type = "password"], .login-box input[type = "submit"] {
+        width: 300px;
+    }
+}

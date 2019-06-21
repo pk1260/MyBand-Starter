@@ -1,0 +1,262 @@
+@charset "UTF-8";
+/*MOBILE VIEW*/
+body {
+  margin: 0;
+  font-family: roboto;
+  font-weight: 300;
+}
+
+#site {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+          "nav"
+          "img"
+          "abt"
+          "box1"
+          "box2"
+          "box3"
+          "ft"
+}
+
+/*NAVIGATIE*/
+header {
+  grid-area: nav;
+}
+
+/*ABOUT US BLACK*/
+.aboutus, .aboutus-main {
+  background: #282828;
+  grid-area: abt;
+  height: 50vh;
+  color: white;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  display: grid;
+}
+
+.aboutus-main {
+  height: 70vh;
+}
+
+.aboutus-main p {
+  font-size: .6em;
+}
+
+.aboutus-text-left {
+  margin: 2em;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  text-align: left;
+}
+
+.aboutus-text-right {
+  padding-top: 3em;
+  margin: 2em;
+  grid-row: 2/3;
+  grid-column: 2/4;
+  text-align: left;
+}
+
+.aboutus-main-left {
+  margin: 2em;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  text-align: left;
+}
+
+.aboutus-main-right {
+  padding-top: 3em;
+  margin: 2em;
+  grid-row: 2/3;
+  grid-column: 2/4;
+  text-align: left;
+}
+
+/*FRONT MODEL*/
+.img {
+  /*background: url("../img/spacex.jpg")  60% 65% no-repeat;*/
+  grid-area: img;
+  height: 96vh;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  text-align: left;
+}
+
+.img-text {
+  color: white;
+  grid-row: 4/5;
+  padding-left: 2em;
+}
+.img-text h1 {
+  padding-bottom: .3em;
+  font-size: 200%;
+}
+
+.img-text span{
+  color: #005288;
+}
+
+/*ABOUT US BLACK*/
+.aboutus-text {
+  color: white;
+  padding: 2em;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+/*CONTENT BOX 1*/
+.box-1 {
+  grid-area: box1;
+  height: 33.3vh;
+  text-align: center;
+  grid-template-rows: repeat(3, 1fr);
+  display: grid;
+  border-bottom: #282828 1px solid;
+}
+
+/*CONTENT BOX 1*/
+.box-1 {
+  grid-area: box1;
+  height: 33.3vh;
+  text-align: center;
+  grid-template-rows: repeat(3, 1fr);
+  display: grid;
+  border-bottom: #282828 1px solid;
+  position: relative;
+}
+
+.overlay-1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  /*background: url("../img/elon.jpg") center no-repeat;*/
+  background-size: cover;
+  grid-template-rows: repeat(3, 1fr);
+  display: grid;
+}
+.overlay-2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  /*background: url("../img/burst.png") center no-repeat;*/
+  background-size: cover;
+  grid-template-rows: repeat(3, 1fr);
+  display: grid;
+}
+.overlay-3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  /*background: url("../img/launch.jpg") center no-repeat;*/
+  background-size: cover;
+  grid-template-rows: repeat(3, 1fr);
+  display: grid;
+}
+.text {
+  font-size: large;
+  grid-row: 2/3;
+  padding-top: 1.4em;
+  text-transform: uppercase;
+}
+
+.box-1:hover .overlay-1 {
+  opacity: 1;
+  color: white;
+}
+
+.box-2:hover .overlay-2 {
+  opacity: 1;
+  color: white;
+}
+
+.box-3:hover .overlay-3 {
+  opacity: 1;
+  color: white;
+}
+
+/*CONTENT BOX 2*/
+.box-2 {
+  grid-area: box2;
+  height: 33.3vh;
+  text-align: center;
+  grid-template-rows: repeat(3, 1fr);
+  display: grid;
+  border-bottom: #282828 1px solid;
+  position: relative;
+}
+
+/*CONTENT BOX 3*/
+.box-3 {
+  grid-area: box3;
+  height: 33.3vh;
+  text-align: center;
+  grid-template-rows: repeat(3, 1fr);
+  display: grid;
+  border-bottom: #282828 1px solid;
+  position: relative;
+}
+
+.box-text {
+  font-size: large;
+  grid-row: 2/3;
+  padding-top: 1.4em;
+}
+
+.box-text h2 {
+  text-transform: uppercase;
+}
+
+/* TABLET VIEW */
+@media screen and (min-width: 780px) {
+  .overlay-1 {
+    background-position: 70% 30%;
+  }
+
+  .aboutus-main p {
+    font-size: .8em;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1200px) {
+  .img-text h1{
+    font-size: 3.5em;
+  }
+
+  .img-text h2{
+    font-size: 3em;
+  }
+
+  .aboutus-text-left h2 {
+    font-size: 2em;
+    font-weight: 600;
+  }
+
+  .aboutus-text-left p {
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+
+  .aboutus-text-right p {
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+
+  .aboutus-main p {
+    font-size: 1em;
+  }
+}
