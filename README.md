@@ -52,13 +52,12 @@ Deze fase duurt 3 weken
 | Milestone  | Status | Link |
 | ------ |  ------ | ------ |
 | B1-K1-W2 Product backlog                          | DONE | [Backlog]                            | https://trello.com/b/7lACm5HD/project-space-x | |
-| B1-K1-W2 Sprint planning 1, 2 en 3                | DONE | [Trello] / [Trello Tips]             | https://trello.com/b/7lACm5HD/project-space-x planningen | |
+| B1-K1-W2 Sprint planning 1, 2 en 3                | DONE | [Trello]                             | https://trello.com/b/7lACm5HD/project-space-x planningen | |
 | B1-K1-W3 Technisch Ontwerp                        | DONE | [TO]                                 | Markdown of Word/RTF| |
 
-[Backlog]: </doc/fase-2/technisch-ontwerp.md>
-[TO]: </doc/fase-2/technisch-ontwerp.md>
+[Backlog]: </doc/fase-1/SpaceX - Backlog.xlsx>
+[TO]: <doc/fase-1/spaceX - consept/>
 [Trello]: https://trello.com/b/7lACm5HD/project-space-x
-[Trello Tips]: <https://blog.trello.com/how-to-scrum-and-trello-for-teams-at-work>
    
 #### Fase 3: Testen en opleveren van het project
 
