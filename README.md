@@ -42,7 +42,7 @@ Deze fase duurt 3 weken
 [Plan van Aanpak]: <doc/fase-1/SpaceX - PvA.pdf>
 [User stories]: <doc/fase-1/SpaceX - User-stories.md>
 [Design]: <doc/fase-1/design/SpaceX - Functioneel-ontwerp.md/>
-[FO]: </doc/fase-1/functioneel-ontwerp.md>
+[FO]: </doc/fase-1/spaceX - consept/>
 [Flow]: <doc/fase-1/SpaceX - Flowchart.pdf>
 [Urenschatting]: <doc/fase-1/SpaceX - Urenschatting.md>
 [axShare]: <doc/fase-1/design/SpaceX - Functioneel-ontwerp.md/>
