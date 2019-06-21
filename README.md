@@ -41,11 +41,11 @@ Deze fase duurt 3 weken
 [Planning]: <doc/fase-1/SpaceX - Planning.md>
 [Plan van Aanpak]: <doc/fase-1/SpaceX - PvA.pdf>
 [User stories]: <doc/fase-1/SpaceX - User-stories.md>
-[Design]: <doc/fase-1/design/SpaceX - Functioneel-ontwerp.md/>
+[Design]: <doc/fase-1/spaceX - consept/>
 [FO]: </doc/fase-1/spaceX - consept/>
 [Flow]: <doc/fase-1/SpaceX - Flowchart.pdf>
 [Urenschatting]: <doc/fase-1/SpaceX - Urenschatting.md>
-[axShare]: <doc/fase-1/design/SpaceX - Functioneel-ontwerp.md/>
+[axShare]: <doc/fase-1/spaceX - consept/>
 
 #### Fase 2: Realiseren van de opdracht (in sprints)
 
