@@ -11,6 +11,7 @@
 class PhotosController {
 	function photospage(){
 		include __DIR__ . '/../views/header.php';
+		$photos = showPhotos(true);
         include __DIR__ . '/../views/photos.php';
         include __DIR__ . '/../views/footer.php';
 	}

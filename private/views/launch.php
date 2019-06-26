@@ -61,7 +61,7 @@ $pdo_statement->execute();
 $result = $pdo_statement->fetchAll();
 
 ?>
-<div class="img" style="background: url(<?php echo url('/img/') . getBackground('bg-launch'); ?>) 60% 0%">
+<div class="img" style="background: url(<?php echo url('/img/') . getBackground('bg-launch'); ?>) 60% 0% no-repeat">
     <div id="img-text">
         <h1><?php echo getH1('main-launch'); ?></h1>
         <h2><?php echo getH2('main-launch'); ?></h2>

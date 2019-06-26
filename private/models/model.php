@@ -6,13 +6,14 @@
  * Time: 08:44
  */
 
-function getBackground($code){
+function getBackground($code)
+{
     $connection = dbConnect();
 
     $sql = 'SELECT `name` FROM `photos` WHERE code = :code';
     $stmt = $connection->prepare($sql);
     $stmt->execute(['code' => $code]);
-    if($stmt->rowCount()){
+    if ($stmt->rowCount()) {
         $data = $stmt->fetchColumn();
         return $data;
     } else {
@@ -20,13 +21,14 @@ function getBackground($code){
     }
 }
 
-function getH1($code){
+function getH1($code)
+{
     $connection = dbConnect();
 
     $sql = 'SELECT `h1` FROM `text` WHERE code = :code';
     $stmt = $connection->prepare($sql);
     $stmt->execute(['code' => $code]);
-    if($stmt->rowCount()){
+    if ($stmt->rowCount()) {
         $data = $stmt->fetchColumn();
         return $data;
     } else {
@@ -34,13 +36,14 @@ function getH1($code){
     }
 }
 
-function getH2($code){
+function getH2($code)
+{
     $connection = dbConnect();
 
     $sql = 'SELECT `h2` FROM `text` WHERE code = :code';
     $stmt = $connection->prepare($sql);
     $stmt->execute(['code' => $code]);
-    if($stmt->rowCount()){
+    if ($stmt->rowCount()) {
         $data = $stmt->fetchColumn();
         return $data;
     } else {
@@ -48,13 +51,14 @@ function getH2($code){
     }
 }
 
-function getP($code){
+function getP($code)
+{
     $connection = dbConnect();
 
     $sql = 'SELECT `p` FROM `text` WHERE code = :code';
     $stmt = $connection->prepare($sql);
     $stmt->execute(['code' => $code]);
-    if($stmt->rowCount()){
+    if ($stmt->rowCount()) {
         $data = $stmt->fetchColumn();
         return $data;
     } else {
@@ -62,13 +66,14 @@ function getP($code){
     }
 }
 
-function getSpan($code){
+function getSpan($code)
+{
     $connection = dbConnect();
 
     $sql = 'SELECT `span` FROM `text` WHERE code = :code';
     $stmt = $connection->prepare($sql);
     $stmt->execute(['code' => $code]);
-    if($stmt->rowCount()){
+    if ($stmt->rowCount()) {
         $data = $stmt->fetchColumn();
         return $data;
     } else {
@@ -76,13 +81,14 @@ function getSpan($code){
     }
 }
 
-function getTag1($code){
+function getTag1($code)
+{
     $connection = dbConnect();
 
     $sql = 'SELECT `tag1` FROM `photos` WHERE code = :code';
     $stmt = $connection->prepare($sql);
     $stmt->execute(['code' => $code]);
-    if($stmt->rowCount()){
+    if ($stmt->rowCount()) {
         $data = $stmt->fetchColumn();
         return $data;
     } else {
@@ -90,13 +96,14 @@ function getTag1($code){
     }
 }
 
-function getTag2($code){
+function getTag2($code)
+{
     $connection = dbConnect();
 
     $sql = 'SELECT `tag2` FROM `photos` WHERE code = :code';
     $stmt = $connection->prepare($sql);
     $stmt->execute(['code' => $code]);
-    if($stmt->rowCount()){
+    if ($stmt->rowCount()) {
         $data = $stmt->fetchColumn();
         return $data;
     } else {
@@ -104,13 +111,14 @@ function getTag2($code){
     }
 }
 
-function getTag3($code){
+function getTag3($code)
+{
     $connection = dbConnect();
 
     $sql = 'SELECT `tag3` FROM `photos` WHERE code = :code';
     $stmt = $connection->prepare($sql);
     $stmt->execute(['code' => $code]);
-    if($stmt->rowCount()){
+    if ($stmt->rowCount()) {
         $data = $stmt->fetchColumn();
         return $data;
     } else {
@@ -118,7 +126,38 @@ function getTag3($code){
     }
 }
 
-function getData() {
+function getTitel($code)
+{
+    $connection = dbConnect();
+
+    $sql = 'SELECT `titel` FROM `photos` WHERE code = :code';
+    $stmt = $connection->prepare($sql);
+    $stmt->execute(['code' => $code]);
+    if ($stmt->rowCount()) {
+        $data = $stmt->fetchColumn();
+        return $data;
+    } else {
+        echo 'lol';
+    }
+}
+
+function getInfo($code)
+{
+    $connection = dbConnect();
+
+    $sql = 'SELECT `titel` FROM `photos` WHERE code = :code';
+    $stmt = $connection->prepare($sql);
+    $stmt->execute(['code' => $code]);
+    if ($stmt->rowCount()) {
+        $data = $stmt->fetchColumn();
+        return $data;
+    } else {
+        echo 'lol';
+    }
+}
+
+function getData()
+{
     $database = dbConnect();
 
 // de define() function maakt een constante (een vaste waarde)
@@ -171,4 +210,27 @@ function getData() {
 
     return $result;
 }
+
+function showPhotos($random = false)
+{
+    // PHOTOS
+    $data = [];
+    $connection = dbConnect();
+    // $sql = 'SELECT * FROM `photos` ORDER BY RAND()';
+
+    $sql = 'SELECT * FROM `photos`';
+    $stmt = $connection->query($sql);
+
+    if ($stmt->rowCount()) {
+        $data = $stmt->fetchAll();
+    }
+
+
+    if ($random === true) {
+        shuffle($data);
+    }
+
+    return $data;
+}
+
 ?>

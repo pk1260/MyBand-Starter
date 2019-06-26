@@ -33,8 +33,8 @@
     grid-column: 2/3;
     margin: 1em;
     padding: 1em;
-    width: 350px;
-    height: 300px;
+    width: 260px;
+    height: auto;
     background-color: lightgrey;
     border-radius: .4em;
     border-color: dimgray;
@@ -42,7 +42,7 @@
 }
 
 .content-box h2{
-    padding: 0em;
+    padding-left: 1em;
     text-align: left;
 }
 
@@ -52,7 +52,48 @@
 }
 
 #tag {
-    padding-left: .3em;
+    padding-left: 1.8em;
     text-transform: uppercase;
     text-align: left;
+}
+
+.text-content {
+    padding: .5em;
+}
+
+@media screen and (min-width: 600px) {
+    .content-box {
+        width: 400px;
+    }
+}
+@media screen and (min-width: 900px) {
+    .content-box {
+        width: 600px;
+    }
+
+    .content-box h2{
+        padding-left: 1.2em;
+        text-align: left;
+    }
+
+    #tag {
+        padding-left: 2em;
+    }
+
+    .text-content {
+        padding: .5em;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .content-box {
+        width: 800px;
+    }
+
+    #tag {
+        padding-left: 2em;
+    }
+
+    .text-content {
+        padding: .5em;
+    }
 }

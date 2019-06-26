@@ -7,7 +7,7 @@
  */
 ?>
 
-<div class="img" style="background: url(<?php echo url('/img/') . getBackground('bg-boundry'); ?>) 60% 30%">
+<div class="img" style="background: url(<?php echo url('/img/') . getBackground('bg-boundry'); ?>) 60% 30% no-repeat">
     <div id="img-text">
         <h1><?php echo getH1('main-photo'); ?></h1>
         <h2><?php echo getH2('main-photo'); ?></h2>
@@ -15,39 +15,14 @@
 </div>
 
 <div class="photo-content">
-    <div class="content-box">
-        <h2 class="titel">Hello</h2>
-        <img class="content-img" src="<?php echo url('/img/') . getBackground('bg-spacex'); ?>" alt="img">
-        <p class="content-p">Falon heavy on launchpad 13A the historic launch site of the Saturn rockets</p>
-        <p id='tag' class="tag-1">Tag 1: <?php echo getTag1('bg-spacex'); ?></p>
-        <p id='tag' class="tag-2">Tag 2: <?php echo getTag2('bg-spacex'); ?></p>
-        <p id='tag' class="tag-3">Tag 3: <?php echo getTag3('bg-spacex'); ?></p>
-    </div>
-
-    <div class="content-box">
-        <h2 class="titel">Hello</h2>
-        <img class="content-img" src="<?php echo url('/img/') . getBackground('bg-launch'); ?>" alt="img">
-        <p class="content-p">Falon heavy on launchpad 13A the historic launch site of the Saturn rockets</p>
-        <p id='tag' class="tag-1">Tag 1: <?php echo getTag1('bg-launch'); ?></p>
-        <p id='tag' class="tag-2">Tag 2: <?php echo getTag2('bg-launch'); ?></p>
-        <p id='tag' class="tag-3">Tag 3: <?php echo getTag3('bg-launch'); ?></p>
-    </div>
-
-    <div class="content-box">
-        <h2 class="titel">Hello</h2>
-        <img class="content-img" src="<?php echo url('/img/') . getBackground('bg-elon'); ?>" alt="img">
-        <p class="content-p">Falon heavy on launchpad 13A the historic launch site of the Saturn rockets</p>
-        <p id='tag' class="tag-1">Tag 1: <?php echo getTag1('bg-elon'); ?></p>
-        <p id='tag' class="tag-2">Tag 2: <?php echo getTag2('bg-elon'); ?></p>
-        <p id='tag' class="tag-3">Tag 3: <?php echo getTag3('bg-elon'); ?></p>
-    </div>
-
-    <div class="content-box">
-        <h2 class="titel">Hello</h2>
-        <img class="content-img" src="<?php echo url('/img/') . getBackground('bg-burst'); ?>" alt="img">
-        <p class="content-p">Falon heavy on launchpad 13A the historic launch site of the Saturn rockets</p>
-        <p id='tag' class="tag-1">Tag 1: <?php echo getTag1('bg-burst'); ?></p>
-        <p id='tag' class="tag-2">Tag 2: <?php echo getTag2('bg-burst'); ?></p>
-        <p id='tag' class="tag-3">Tag 3: <?php echo getTag3('bg-burst'); ?></p>
-    </div>
+    <?php foreach ($photos as $img) { ?>
+        <div class="content-box">
+            <h2 class="titel"><?php echo $img['titel'] ?></h2>
+            <img class="content-img" src="<?php echo url('/img/' . $img['name']) ?>" alt="img" />
+            <p class="text-content"><?php echo $img['text'] ?></p>
+            <p id='tag' class="tag-1">Tag 1: <?php echo $img['tag1'] ?></p>
+            <p id='tag' class="tag-2">Tag 2: <?php echo $img['tag2'] ?></p>
+            <p id='tag' class="tag-3">Tag 3: <?php echo $img['tag3'] ?></p>
+        </div>
+    <?php } ?>
 </div>

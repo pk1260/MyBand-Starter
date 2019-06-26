@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/photos.css">
     <link rel="stylesheet" href="css/launch.css">
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <link rel="stylesheet" href="css/ajax.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/ajax.css"/>
     <script src="js/jQuery-min.js"></script>
     <script src="js/ajax.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"

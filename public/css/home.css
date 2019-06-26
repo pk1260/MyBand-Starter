@@ -76,7 +76,7 @@ header {
 
 /*FRONT MODEL*/
 .img {
-  /*background: url("../img/spacex.jpg")  60% 65% no-repeat;*/
+  background-size: cover;
   grid-area: img;
   height: 96vh;
   grid-template-rows: repeat(5, 1fr);

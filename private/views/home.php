@@ -7,7 +7,7 @@
  */
 ?>
 
-<div class="img" style="background: url(<?php echo url('/img/') . getBackground('bg-spacex'); ?>) 60% 30%">
+<div class="img" style="background: url(<?php echo url('/img/') . getBackground('bg-spacex'); ?>) 60% 30% no-repeat">
     <div class="img-text">
         <h1><?php echo getH1('main-text'); ?><span><?php echo getSpan('main-text'); ?></span></h1>
         <h2><?php echo getH2('main-text'); ?></h2>

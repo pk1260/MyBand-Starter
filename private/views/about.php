@@ -7,7 +7,7 @@
  */
 ?>
 
-<div class="img" style="background: url(<?php echo url('/img/') . getBackground('bg-elon'); ?>) 60% 0%">
+<div class="img" style="background: url(<?php echo url('/img/') . getBackground('bg-elon'); ?>) 60% 0% no-repeat">
     <div id="img-text">
         <h1><?php echo getH1('main-about-left'); ?></h1>
         <h2><?php echo getH2('main-about-left'); ?></h2>

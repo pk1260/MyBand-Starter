@@ -1,5 +1,5 @@
 <div class="login-container">
-    <div class="login-img" style="background: url(<?php echo url('/img/') . getBackground('bg-launch'); ?>) 30% 0%"></div>
+    <div class="login-img" style="background: url(<?php echo url('/img/') . getBackground('bg-launch'); ?>) 30% 0% no-repeat"></div>
 
     <div class="login-form">
         <form class="login-box" action="<?php echo url('/login')?>" method="post">

@@ -8,3 +8,7 @@
 .launch-tabel {
     grid-column: 2/5;
 }
+
+th {
+    font-size: .5em;
+}
